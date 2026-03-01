@@ -1,0 +1,14 @@
+ktor:
+    application:
+        modules:
+            - com.example.ApplicationKt.module
+    deployment:
+        port: 8080
+
+jwt:
+    secret: ${JWT_SECRET:change-this-secret-in-production}
+
+database:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/jobportal}
+    user: ${DB_USER:admin}
+    password: ${DB_PASSWORD:admin}
